@@ -1,7 +1,7 @@
 from netmiko import ConnectHandler 
 from getpass import getpass 
 
-net_connect = ConnectHandler(
+node = ConnectHandler(
     host='cisco3.lasthop.io',
     username='pyclass',
     password=getpass(),
@@ -9,5 +9,5 @@ net_connect = ConnectHandler(
     session_log='my_log.txt',
 )
 
-print(net_connect.find_prompt())
+print(node.find_prompt())
 
