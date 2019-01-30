@@ -20,8 +20,7 @@ R2 = {
 for device in (R1, R2):
     net_connect = ConnectHandler(**device)
     output = net_connect.send_command("show version")
-
-print (output)
+    print (output)
 
 with open("show_version.txt", "w") as save_data:
     save_data.write(output)
