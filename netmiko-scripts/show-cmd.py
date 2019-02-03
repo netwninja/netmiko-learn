@@ -12,3 +12,5 @@ net_connect = ConnectHandler(**node)
 output = net_connect.send_command("show version")
 print(output)
 
+with open("show_version.txt", "w") as save_data:
+    save_data.write(output)
