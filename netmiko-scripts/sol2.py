@@ -1,5 +1,5 @@
-from netmiko import ConnectHandler 
-from getpass import getpass 
+from netmiko import ConnectHandler
+from getpass import getpass
 
 pasw = getpass()
 
@@ -20,3 +20,5 @@ nxos2 = {
 for device in (nxos1, nxos2):
     net_connect = ConnectHandler(**device)
     print(net_connect.find_prompt())
+
+net_connect.disconnect()

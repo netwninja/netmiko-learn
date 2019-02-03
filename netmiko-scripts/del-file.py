@@ -28,3 +28,5 @@ output += net_connect.send_command_timing("y",
 output += net_connect.send_command_timing(command2,
     strip_prompt=False, strip_command=False)
 print (output)
+
+net_connect.disconnect()

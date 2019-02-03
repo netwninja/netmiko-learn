@@ -14,3 +14,5 @@ print(output)
 
 with open("show_version.txt", "w") as save_data:
     save_data.write(output)
+
+net_connect.disconnect()
